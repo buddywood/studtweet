@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  yrFounded: 1
+  totalMembers: 1
+  headquarters: MyString
+
+two:
+  name: MyString
+  yrFounded: 1
+  totalMembers: 1
+  headquarters: MyString

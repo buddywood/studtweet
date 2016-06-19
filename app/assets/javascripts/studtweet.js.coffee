@@ -1,3 +1,12 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://coffeescript.org/
+app = angular.module("Studtweet", ["ngResource"])
+
+@StudCtrl = ($scope, $resource) ->
+	
+	Conference = $resource("conferences/:id", {id: "@id"}, {update: {method:"PUT"}})
+
+	$scope.conferences = Conference.query()
+			
+	$scope.addConference = ->
+		entry = Conference.save($scope.newConference)
+		$scope.conferences.push(conferences)
+		$scope.newConference = {}

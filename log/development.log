@@ -347,3 +347,316 @@ Started GET "/assets/studtweet.js?body=1" for 127.0.0.1 at 2016-06-16 18:44:44 -
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-06-16 18:44:44 -0500
+  [1m[36m (11302.4ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (5707.3ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (235.9ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateConferences (20160618015732)
+  [1m[35m (2871.3ms)[0m  CREATE TABLE `conferences` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `yrFounded` int(11), `totalMembers` int(11), `headquarters` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (74.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (199.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160618015732')
+  [1m[36m (15.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (153.3ms)[0m  [1mINSERT INTO `conferences` (`created_at`, `headquarters`, `name`, `totalMembers`, `updated_at`, `yrFounded`) VALUES ('2016-06-18 02:07:10', 'Providence, RI', 'American Athletic Conference', 11, '2016-06-18 02:07:10', 1979)[0m
+  [1m[35m (51.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `conferences` (`created_at`, `headquarters`, `name`, `totalMembers`, `updated_at`, `yrFounded`) VALUES ('2016-06-18 02:07:10', 'Greensboro, NC', 'Atlantic Coast Conference', 15, '2016-06-18 02:07:10', 1953)
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `conferences` (`created_at`, `headquarters`, `name`, `totalMembers`, `updated_at`, `yrFounded`) VALUES ('2016-06-18 02:07:10', 'Rosemont, IL', 'Big Ten Conference', 14, '2016-06-18 02:07:10', 1896)[0m
+  [1m[35m (21.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `conferences` (`created_at`, `headquarters`, `name`, `totalMembers`, `updated_at`, `yrFounded`) VALUES ('2016-06-18 02:07:10', 'Irving, TX', 'Big 12 Conference', 10, '2016-06-18 02:07:10', 1996)
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `conferences` (`created_at`, `headquarters`, `name`, `totalMembers`, `updated_at`, `yrFounded`) VALUES ('2016-06-18 02:07:10', 'Irving, TX', 'Conference USA', 14, '2016-06-18 02:07:10', 1995)[0m
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `conferences` (`created_at`, `headquarters`, `name`, `totalMembers`, `updated_at`, `yrFounded`) VALUES ('2016-06-18 02:07:10', 'None', 'Division I FBS Independents', 3, '2016-06-18 02:07:10', 0)
+  [1m[36m (15.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `conferences` (`created_at`, `headquarters`, `name`, `totalMembers`, `updated_at`, `yrFounded`) VALUES ('2016-06-18 02:07:10', 'Cleveland, OH', 'Mid-American Conference', 12, '2016-06-18 02:07:10', 1946)[0m
+  [1m[35m (15.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `conferences` (`created_at`, `headquarters`, `name`, `totalMembers`, `updated_at`, `yrFounded`) VALUES ('2016-06-18 02:07:10', 'Colorado Springs, CO', 'Mountain West Conference', 11, '2016-06-18 02:07:10', 1999)
+  [1m[36m (14.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `conferences` (`created_at`, `headquarters`, `name`, `totalMembers`, `updated_at`, `yrFounded`) VALUES ('2016-06-18 02:07:10', 'Walnut Creek, CA', 'Pac-12 Conference', 12, '2016-06-18 02:07:10', 1959)[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `conferences` (`created_at`, `headquarters`, `name`, `totalMembers`, `updated_at`, `yrFounded`) VALUES ('2016-06-18 02:07:11', 'Birmingham, AL', 'Southeastern Conference', 14, '2016-06-18 02:07:11', 1932)
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `conferences` (`created_at`, `headquarters`, `name`, `totalMembers`, `updated_at`, `yrFounded`) VALUES ('2016-06-18 02:07:11', 'New Orleans, LA', 'Sun Belt Conference', 11, '2016-06-18 02:07:11', 1976)[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-17 21:23:17 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by StudtweetController#index as HTML
+  Rendered studtweet/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 155ms (Views: 94.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-17 21:23:29 -0500
+Processing by StudtweetController#index as HTML
+  Rendered studtweet/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-17 21:23:31 -0500
+Processing by StudtweetController#index as HTML
+  Rendered studtweet/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-17 21:25:12 -0500
+Processing by StudtweetController#index as HTML
+  Rendered studtweet/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-17 21:25:46 -0500
+Processing by StudtweetController#index as HTML
+  Rendered studtweet/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-17 21:27:23 -0500
+Processing by StudtweetController#index as HTML
+  Rendered studtweet/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 4249ms
+
+ActionView::Template::Error (couldn't find file 'angular'
+  (in /Users/billytalton/Sites/studtweet/app/assets/javascripts/application.js:15)):
+    3: <head>
+    4:   <title>Stud Tweet</title>
+    5:    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:  <%= csrf_meta_tags %>
+    8: < /head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__4592522716502757613_70126058884420'
+
+
+  Rendered /Users/billytalton/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/billytalton/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/billytalton/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-17 21:30:02 -0500
+Processing by StudtweetController#index as HTML
+  Rendered studtweet/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 256ms
+
+ActionView::Template::Error (couldn't find file 'angular'
+  (in /Users/billytalton/Sites/studtweet/app/assets/javascripts/application.js:15)):
+    3: <head>
+    4:   <title>Stud Tweet</title>
+    5:    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:  <%= csrf_meta_tags %>
+    8: < /head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__4592522716502757613_70126058884420'
+
+
+  Rendered /Users/billytalton/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/billytalton/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/billytalton/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-17 21:30:31 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by StudtweetController#index as HTML
+  Rendered studtweet/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 3148ms (Views: 3120.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/conferences.css?body=1" for 127.0.0.1 at 2016-06-17 21:30:36 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2016-06-17 21:30:36 -0500
+
+
+Started GET "/assets/studtweet.css?body=1" for 127.0.0.1 at 2016-06-17 21:30:36 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-06-17 21:30:36 -0500
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2016-06-17 21:30:36 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-06-17 21:30:36 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-06-17 21:30:36 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2016-06-17 21:30:36 -0500
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2016-06-17 21:30:36 -0500
+
+
+Started GET "/assets/conferences.js?body=1" for 127.0.0.1 at 2016-06-17 21:30:36 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2016-06-17 21:30:36 -0500
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-06-17 21:30:36 -0500
+
+
+Started GET "/assets/studtweet.js?body=1" for 127.0.0.1 at 2016-06-17 21:30:36 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-06-17 21:30:36 -0500
+
+
+Started GET "/conferences" for 127.0.0.1 at 2016-06-17 21:30:36 -0500
+Processing by ConferencesController#index as JSON
+  [1m[35mConference Load (2.7ms)[0m  SELECT `conferences`.* FROM `conferences`
+Completed 200 OK in 393ms (Views: 60.8ms | ActiveRecord: 255.4ms)
+
+
+Started POST "/conferences" for 127.0.0.1 at 2016-06-17 21:30:45 -0500
+Processing by ConferencesController#create as JSON
+  Parameters: {"name"=>"Test", "conference"=>{"name"=>"Test"}}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 1ms
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.1.5) lib/action_controller/metal/request_forgery_protection.rb:176:in `handle_unverified_request'
+  actionpack (4.1.5) lib/action_controller/metal/request_forgery_protection.rb:202:in `handle_unverified_request'
+  actionpack (4.1.5) lib/action_controller/metal/request_forgery_protection.rb:197:in `verify_authenticity_token'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:424:in `block in make_lambda'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:160:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:160:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/billytalton/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/billytalton/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/billytalton/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/billytalton/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/billytalton/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /Users/billytalton/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/billytalton/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb (36.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-17 21:31:14 -0500
+Processing by StudtweetController#index as HTML
+  Rendered studtweet/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 118ms (Views: 117.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2016-06-17 21:31:14 -0500
+
+
+Started GET "/assets/conferences.css?body=1" for 127.0.0.1 at 2016-06-17 21:31:14 -0500
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2016-06-17 21:31:14 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-06-17 21:31:14 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-06-17 21:31:14 -0500
+
+
+Started GET "/assets/studtweet.css?body=1" for 127.0.0.1 at 2016-06-17 21:31:14 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-06-17 21:31:14 -0500
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2016-06-17 21:31:14 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2016-06-17 21:31:14 -0500
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-06-17 21:31:14 -0500
+
+
+Started GET "/assets/conferences.js?body=1" for 127.0.0.1 at 2016-06-17 21:31:14 -0500
+
+
+Started GET "/assets/studtweet.js?body=1" for 127.0.0.1 at 2016-06-17 21:31:14 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-06-17 21:31:14 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2016-06-17 21:31:14 -0500
+
+
+Started GET "/conferences" for 127.0.0.1 at 2016-06-17 21:31:14 -0500
+Processing by ConferencesController#index as JSON
+  [1m[36mConference Load (0.4ms)[0m  [1mSELECT `conferences`.* FROM `conferences`[0m
+Completed 200 OK in 6ms (Views: 3.4ms | ActiveRecord: 0.4ms)
